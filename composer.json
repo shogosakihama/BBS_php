@@ -1,0 +1,12 @@
+{
+    "name": "shogo_sakihama/bbs_php",
+    "authors": [
+        {
+            "name": "Shogo Sakihama",
+            "email": "goshalways@gmail.com"
+        }
+    ],
+    "require": {
+      "illuminate/database": "*"
+    }
+}
