@@ -1,7 +1,7 @@
 <body>
 
 <h1><?= $message ?></h1>
-
+<?php include('header.inc.php'); ?>
 <table>
     <tr><th>Id</th><th>タイトル</th></tr>
     <?php foreach ($articles as $article) { ?>
