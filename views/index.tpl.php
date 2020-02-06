@@ -1,20 +1,29 @@
 <body>
-
-<h1><?= $message ?></h1>
-<?php include('header.inc.php'); ?>
-<table>
-    <tr><th>Id</th><th>タイトル</th></tr>
-    <?php foreach ($articles as $article) { ?>
+  <?php include('nav.php'); ?>
+  <div class="container">
+    <h2><?= $_SESSION['username'] ?></h2>
+    <h1><?= $message ?></h1>
+    <?php include('header.inc.php'); ?>
+    <div class="table">
+      <table class="table">
         <tr>
-            <td><?= $article->id ?></td>
-            <td><a href='show.php?id=<?=$article->id?>'>
-                    <?= $article->title ?></td>
-                </a>
+          <th class="font-size">Id</th>
+          <th class="font-size">タイトル</th>
         </tr>
-    <?php } ?>
-</table>
-<p><a href='new.php'>新規メモ</a></p>
+        <?php foreach ($articles as $article) { ?>
+          <tr>
+            <td class="font-size"><?= $article->id ?></td>
+            <td class="font-size"><a href='show.php?id=<?= $article->id ?>'>
+                <?= $article->title ?></td>
+            </a>
+          </tr>
+        <?php } ?>
+      </table>
+    </div>
+    <p><a href='new.php'>新規メモ</a></p>
+  </div>
 
-<?php include('footer.inc.php'); ?>
+  <?php include('footer.inc.php'); ?>
 </body>
+
 </html>

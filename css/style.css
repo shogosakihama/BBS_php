@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+ .jiro {
+  text-align: center;
+} 
+
+.container {
+  text-align: center;
+} 
+
+.table {
+  margin: auto;
+} 
+
+.font-size {
+  font-size:120%;
+}

@@ -1,2 +1,2 @@
 <hr>
-<footer>by paiza</footer>
+<footer>by SS</footer>

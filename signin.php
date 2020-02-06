@@ -5,3 +5,4 @@
     session_start();
 
     require_once 'views/signin.tpl.php';
+    exit;

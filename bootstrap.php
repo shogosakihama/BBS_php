@@ -25,3 +25,7 @@ $capsule->bootEloquent();
 
 class Article extends Model {
 }
+
+class User extends Model {
+  
+}

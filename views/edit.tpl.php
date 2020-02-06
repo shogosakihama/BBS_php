@@ -2,7 +2,7 @@
 <html lang='ja'>
     <?php include('header.inc.php'); ?>
     <body>
-
+        <?php include('nav.php'); ?> 
         <h1><?= $message ?></h1>
 
         <form action='update.php' method='post'>

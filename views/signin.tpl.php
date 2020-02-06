@@ -1,22 +1,29 @@
 <!DOCTYPE html>
-<html lang='ja'>   <div class="form-wrapper">
-      <h1>Sign In</h1>
-      <form>
-        <div class="form-item">
-          <label for="email"></label>
-          <input type="email" name="email" required="required" placeholder="Email Address"></input>
-        </div>
-        <div class="form-item">
-          <label for="password"></label>
-          <input type="password" name="password" required="required" placeholder="Password"></input>
-        </div>
-        <div class="button-panel">
-          <input type="submit" class="button" title="Sign In" value="Sign In"></input>
-        </div>
-      </form>
-      <div class="form-footer">
-        <p><a href="signup.php">Create an account</a></p>
-        <p><a href="#">Forgot password?</a></p>
-      </div>
-    </div>
- </html>
+<html lang='ja'>
+<?php include('header.inc.php'); ?>
+
+<body>
+  <?php include('nav.php'); ?>
+  <div class="container">
+    <form action='signin_check.php' method='post'>
+      <input type="hidden" name='user_pass' value='user_pass'>
+      <label for='name'>Name</label><br>
+      <input type='text' name='name'>
+      <p></p>
+      <label for='email'>Email</label><br>
+      <input type='text' name='email'>
+      <p></p>
+      <label for='password'>Password</label><br>
+      <input text='password' name='password'>
+      <p></p>
+      <button type='submit'>ログイン</button>
+    </form>
+    <p><a href="signup.php">Create an account</a></p>
+    <p><a href="#">Forgot password?</a></p>
+    <p><a href='index.php'>一覧に戻る</a></p>
+  </div>
+
+  <?php include('footer.inc.php'); ?>
+</body>
+
+</html>

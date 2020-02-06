@@ -5,3 +5,4 @@
     session_start();
 
     require_once 'views/signup.tpl.php';
+    exit;
