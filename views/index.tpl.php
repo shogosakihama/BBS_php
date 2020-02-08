@@ -1,8 +1,7 @@
 <body>
   <?php include('nav.php'); ?>
   <div class="container">
-    <h2><?= $_SESSION['username'] ?></h2>
-    <h1><?= $message ?></h1>
+    <div class="hello"><?= $message ?></div>
     <?php include('header.inc.php'); ?>
     <div class="table">
       <table class="table">
@@ -20,7 +19,9 @@
         <?php } ?>
       </table>
     </div>
+    <? if ($_SESSION['username']){ ?>
     <p><a href='new.php'>新規メモ</a></p>
+    <? } ?>
   </div>
 
   <?php include('footer.inc.php'); ?>

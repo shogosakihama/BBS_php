@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang='ja'>
+<? if ($_SESSION['username']){ ?>
+
     <?php include('header.inc.php'); ?>
     <body>
         <?php include('nav.php'); ?> 
+        <div class="container">
         <h1><?= $message ?></h1>
-
         <form action='update.php' method='post'>
     		<input type='hidden' name='id' value="<?= $article['id'] ?>">
             <label for='title'>タイトル</label><br>
@@ -17,7 +19,12 @@
         </form>
 
         <p><a href='index.php'>一覧に戻る</a></p>
+        </div>
 
         <?php include('footer.inc.php'); ?>
+        
+        <? } ?>
+
+
     </body>
 </html>

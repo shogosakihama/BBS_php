@@ -17,6 +17,7 @@
     $article->title = htmlspecialchars($title, ENT_QUOTES, 'UTF-8');
     $content = $_REQUEST['content'];
     $article->content = htmlspecialchars($content, ENT_QUOTES, 'UTF-8');
+    $article->user_name = $_REQUEST['user_name'];
     $article->save();
 
   
