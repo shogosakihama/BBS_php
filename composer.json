@@ -9,5 +9,8 @@
     "require": {
       "illuminate/database": "*",
         "michelf/php-markdown": "^1.9"
+    },
+    "require-dev": {
+      "heroku/heroku-buildpack-php": "*"
     }
 }
