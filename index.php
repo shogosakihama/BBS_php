@@ -1,10 +1,10 @@
 <?php
 
     require_once 'bootstrap.php';
-    session_start();
+    // session_start();
 
-    $message = 'Hello World';
-    $articles = Article::all();
+    // $message = 'Hello World';
+    // $articles = Article::all();
 
-    $my_html = Michelf\Markdown::defaultTransform($article->content);
-    require_once 'views/index.tpl.php';
+    // $my_html = Michelf\Markdown::defaultTransform($article->content);
+    // require_once 'views/index.tpl.php';
