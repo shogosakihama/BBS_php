@@ -4,7 +4,7 @@
     session_start();
 
     $message = 'Hello World';
-    // $articles = Article::all();
+    $articles = Article::all();
 
     $my_html = Michelf\Markdown::defaultTransform($article->content);
     require_once 'views/index.tpl.php';
