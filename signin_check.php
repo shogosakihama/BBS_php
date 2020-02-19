@@ -6,7 +6,8 @@
 
     $users = User::all();
 
-    if (isset($_POST["user_pass"])) {
+    if (isset($_POST["csrf_token"])
+         && $_POST["csrf_token"] === $_SESSION['csrf_token']) {
         foreach($users as $user){
           if (password_verify ($_POST['password'],$user->password)){
 

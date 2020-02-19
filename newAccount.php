@@ -14,6 +14,7 @@
         $password = htmlspecialchars($password, ENT_QUOTES, 'UTF-8');
         $user->password = password_hash($password, PASSWORD_DEFAULT);
         $user->save();
+        $_SESSION['username'] = $_POST['name'];
         header('Location: index.php');
       }
     exit;

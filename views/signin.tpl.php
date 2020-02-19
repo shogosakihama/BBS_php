@@ -6,7 +6,7 @@
   <?php include('nav.php'); ?>
   <div class="container">
     <form action='signin_check.php' method='post'>
-      <input type="hidden" name='user_pass' value='user_pass'>
+    <input type="hidden" name="csrf_token" value="<?=$csrf_token?>">
       <label for='name'>Name</label><br>
       <input type='text' name='name'>
       <p></p>
